@@ -4,6 +4,9 @@
   height: 100%;
   padding: 60px 10px;
   transform: rotateY(180deg) translateZ(1px);
+  -webkit-transform: rotateY(180deg) translateZ(1px);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 

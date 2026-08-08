@@ -1,17 +1,34 @@
 .App {
   background-color: var(--body-bg);
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
+  padding: 16px;
 }
 
 .cover {
   width: calc(var(--baseline) * 60);
   height: calc(var(--baseline) * 47);
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+  max-height: calc(100svh - 32px);
+  aspect-ratio: 60 / 47;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+@supports (height: 100svh) and (aspect-ratio: 1 / 1) {
+  .cover {
+    width: min(
+      calc(var(--baseline) * 60),
+      calc(100vw - 32px),
+      calc((100svh - 32px) * 60 / 47)
+    );
+    height: auto;
+  }
 }
 
 .book {
@@ -19,6 +36,9 @@
   height: 100%;
   display: flex;
   perspective: 1200px;
+  -webkit-perspective: 1200px;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .mobile__app {
@@ -27,10 +47,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  min-height: 100svh;
   overflow-x: hidden;
+  padding: 16px 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (max-height: 620px) {
   .App {
     display: none;
   }

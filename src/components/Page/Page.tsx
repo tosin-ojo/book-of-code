@@ -43,6 +43,7 @@ const Page: React.FC<Props> = ({
     transition: `transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1),
     z-index 0.9s cubic-bezier(0.645, 0.045, 0.355, 1)`,
     transform: "rotateY(-180deg)",
+    WebkitTransform: "rotateY(-180deg)",
     zIndex: flipped ? `${index}` : `${zIndex}`,
   };
 

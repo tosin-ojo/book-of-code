@@ -41,10 +41,12 @@ const Cards: React.FC<Props> = ({ information, solution }) => {
 
   const flipStyle = {
     transform: "rotateY(180deg)",
+    WebkitTransform: "rotateY(180deg)",
   };
 
   const flippedStyle = {
     transform: "translateZ(0)",
+    WebkitTransform: "translateZ(0)",
   };
 
   return (
