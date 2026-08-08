@@ -1,9 +1,10 @@
+"use client";
+
 import React from "react";
 import Cover from "./components/Cover/Cover";
 import Page from "./components/Page/Page";
 import functions from "./data/functions";
 import Mobile from "./components/Mobile/Mobile";
-import "./App.css";
 
 const App: React.FC = () => {
   const pages = [];

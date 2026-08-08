@@ -1,5 +1,4 @@
 import React from "react";
-import "./Back.css";
 
 interface Content {
   title: string;

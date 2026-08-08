@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Front from "../Front/Front";
 import Back from "../Back/Back";
-import "./Page.css";
 
 interface BackPage {
   title: string;

@@ -1,7 +1,6 @@
 import React from "react";
 import Cards from "../Cards/Cards";
 import mobileFunctions from "../../data/functionsMobile";
-import "./Mobile.css";
 
 const Mobile: React.FC = () => {
   return (

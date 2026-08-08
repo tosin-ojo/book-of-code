@@ -8,7 +8,7 @@
   --book-title: "Tulpen One", sans-serif;
   --title: "Cormorant Garamond", serif;
   --body: "Cormorant Garamond", serif;
-  --base-size: var(--baseline) * 1.2;
+  --base-size: calc(var(--baseline) * 1.2);
 }
 
 * {
@@ -18,7 +18,7 @@
 }
 
 body {
-  color: var(--dark-font);
+  color: var(--dark-text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

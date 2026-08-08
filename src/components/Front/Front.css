@@ -26,6 +26,7 @@
   color: var(--dark-text);
   margin-top: calc(var(--baseline) * 5);
   margin-bottom: calc(var(--baseline) * 2);
+  text-align: center;
 }
 
 .front h2 {
